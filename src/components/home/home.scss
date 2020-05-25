@@ -1,0 +1,48 @@
+@import '../../pages/Index.scss';
+
+.home-section {
+    background-color: black; 
+    max-width: 100vw; 
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home-background {
+    min-width: 100vw;
+    height: 100vh;
+    margin-top: 0px;
+    background-size: cover;
+    align-content: center;
+}
+
+.home-opacity {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.home-content-container {
+    text-align: start; 
+    color: white; 
+    padding-top: 30vh; 
+    padding-left: 10vw;
+}
+
+.home-description {
+    padding-top: 2vh;
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 480px) {
+    .home-content-container {
+        padding-top: 25vh; 
+        padding-left: 3vw;
+    }
+
+    .home-description {
+        font-size: 2.5em;
+    }
+}

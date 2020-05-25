@@ -1,0 +1,27 @@
+.header-container {
+    display: flex; 
+    position: fixed; 
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+    background-color: transparent;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header-active {
+    @extend .header-container;
+    background-color: #302E2E;
+}
+
+@media screen and (max-width: 480px) {
+    .header-container {
+        background-color: #302E2E;
+    }
+}

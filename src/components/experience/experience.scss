@@ -1,0 +1,49 @@
+.experience-section {
+    background: linear-gradient(#080808, #21233d);
+    max-width: 100vw; 
+    min-height: 100vh;
+}
+
+.experience-content-container {
+    padding-top: 20vh; 
+    padding-left: 5vw;
+    color: black;
+}
+
+.experience-text-container {
+    max-width: 30vw;
+    height: 20vh;
+    color: #b3b8cd;
+    transition: 0.5s;
+    &:hover {
+        color: white;
+    }
+}
+
+.experience-text {
+    font-size: 7em;
+}
+
+.experience-cards-container {
+    padding-left: 10vw;
+    padding-top: 5vh;
+}
+
+@media screen and (max-width: 480px) {
+    .experience-content-container {
+        padding-top: 10vh; 
+    }
+
+    .experience-text-container {
+        padding-left: 20px;
+    }
+
+    .experience-text {
+        font-size: 3em;
+    }
+    
+    .experience-cards-container {
+        padding-left: 2vw;
+        padding-top: 0;
+    }
+}
