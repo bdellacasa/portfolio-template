@@ -20,10 +20,10 @@
 }
 
 .portfolio-text-container {
-    padding-top: 15vh;
-    max-width: 30vw;
+    padding-top: 12vh;
+    max-width: 40vw;
     height: 20vh;
-    margin-left: 60vw;
+    margin-left: 50vw;
     color: #b3b8cd;
     transition: 0.5s;
     &:hover {
@@ -32,7 +32,7 @@
 }
 
 .portfolio-text {
-    font-size: 6em;
+    font-size: 7em;
 }
 
 @media screen and (max-width: 480px) {

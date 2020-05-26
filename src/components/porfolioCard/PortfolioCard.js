@@ -1,7 +1,6 @@
 import React from 'react';
 import { Badge } from 'reactstrap';
 import './portfolioCard.scss';
-import image from '../../assets/movieApp.png'
 
 const PortfolioCard = (props) => {
     return (
