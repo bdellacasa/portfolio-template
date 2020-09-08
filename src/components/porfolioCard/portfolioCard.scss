@@ -31,15 +31,14 @@
 }
 
 .portfolio-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 120px; 
-  justify-self: center;
+  justify-content: center;
   opacity: 0;
   transition: 1.2s;
   margin-bottom: -120px;
-
-  &:hover {
-    opacity: 1; 
-  }
 }
 
 .portfolio-card-title {
@@ -49,7 +48,6 @@
 
 .portfolio-card-description {
   justify-self: center;
-  margin-left: 110px;
   width: 20vw;
   padding-top: 20px;
   font-size: 1em;
@@ -67,29 +65,64 @@
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-    .portfolio-card {
-        width: 80vw;
-        height: 75vw;
-        margin-left: -1vw;
 
-        &:hover {
-            transform:scale(1.02);
-            margin-left: -10px;
-        }
-    }
+@media screen and (max-width: 600px) {
+  .portfolio-card {
+    width: 70vw;
+    height: 50vw;
+  }
 
-    .portfolio-card-opacity {
-        width: 90vw;
-        height: 75vw;
-    }
+  .portfolio-card-opacity {
+    width: 70vw;
+    height: 50vw;
+  }
 
-    .portfolio-card-container {
-        padding-top: 40px;
-    }
+  .portfolio-card-container {
+    padding-top: 10px;
+  }
 
-    .portfolio-card-description {
-        width: 60vw;
-        margin-left: 60px;
+  .portfolio-card-description {
+    width: 60vw;
+    padding-top: 10px;
+    font-size: 0.7em;
+  }
+
+  .portfolio-card-title {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .portfolio-card {
+    width: 70vw;
+    height: 50vw;
+  }
+
+  .portfolio-card-opacity {
+    width: 70vw;
+    height: 50vw;
+  }
+
+  .portfolio-card-description {
+    width: 60vw;
+    padding-top: 10px;
+    font-size: 0.8em;
+  }
+
+  .portfolio-card-title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+  .portfolio-card {
+    &:hover {
+      transform: scale(1.01);
+      margin-left: -10px;
     }
+  }
+
+  .portfolio-card-description {
+    width: 40%;
+  }
 }

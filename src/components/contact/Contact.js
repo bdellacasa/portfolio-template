@@ -7,21 +7,18 @@ import { ELEMENTS } from '../../utils/Constants';
 import './contact.scss';
 
 const Contact = () => {
-    return (
-        <section id={ELEMENTS.CONTACT} className={"contact-section"}>
-            <div className={"contact-text-container"}>
-                <h1 className={"contact-text"}>Get in touch!</h1>
-            </div>
-            <div className={"contact-info-container"}>
-                <FiMail className={"contact-icon"}/>
-                <p className={"contact-info-text"}>{Data.contact.mail}</p>
-                <FaLinkedin className={"contact-icon"}/>
-                <p className={"contact-info-text"}>{Data.contact.linkedin}</p>
-                <FaGithub className={"contact-icon"}/>
-                <p className={"contact-info-text"}>{Data.contact.github}</p>
-            </div>
-        </section>
-    );
+  return (
+    <section id={ELEMENTS.CONTACT} className={"contact-section"}>
+      <div className={"contact-text-container"}>
+        <p className={"contact-text"}>Get in touch!</p>
+      </div>
+      <div className={"contact-info-container"}>
+        <a href={Data.contact.mail}><FiMail className={"contact-icon"} /></a>
+        <a href={Data.contact.linkedin}><FaLinkedin className={"contact-icon"} /></a>
+        <a href={Data.contact.github}><FaGithub className={"contact-icon"} /></a>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;

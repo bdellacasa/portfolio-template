@@ -6,15 +6,15 @@ import Portfolio from '../components/portfolio/Portfolio';
 import Contact from '../components/contact/Contact';
 
 const Index = () => {
-    return (
-        <main>
-            <Home/>
-            <About/>
-            <Experience/>
-            <Portfolio/>
-            <Contact/>
-        </main>
-    );
+  return (
+    <main>
+      <Home />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
+    </main>
+  );
 }
 
 export default Index;

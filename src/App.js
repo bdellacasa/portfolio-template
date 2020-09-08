@@ -5,9 +5,9 @@ import Header from './components/header/Header';
 
 const App = () => {
   return (
-    <div className="App" style={{width: '100vw', backgroundColor: 'black'}}>
-        <Header/>
-        <Index/>
+    <div className="App">
+      <Header />
+      <Index />
     </div>
   );
 }

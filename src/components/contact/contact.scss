@@ -1,70 +1,77 @@
 .contact-section {
-    background: linear-gradient(#3f4370, #080808);
-    max-width: 100vw;
-    min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#3f4370, #080808);
+  font-family: 'Open Sans', sans-serif;
 }
 
 .contact-text-container {
-    padding-top: 18vh;
-    margin-left: 35vw;
-    max-width: 30vw;
-    height: 20vh;
-    color: #b3b8cd;
-    transition: 0.5s;
-    &:hover {
-        color: white;
-    }
+  width: 30vw;
+  height: 20vh;
+  color: #b3b8cd;
+  transition: 0.5s;
+  &:hover {
+      color: #ffffff;
+  }
 }
 
 .contact-text {
-    font-size: 4.5em;
+  font-size: 4.5em;
 }
 
 .contact-info-container {
-    padding-top: 15vh;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 8vh;
+  color: #ffffff;
+  padding-bottom: 10%;
 }
 
 .contact-info-text {
-    font-size: 1.5em;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    color: pink
+  font-size: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .contact-icon {
-    width: 60px;
-    height: 60px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 192, 203);
+
+  &:hover {
+    color: rgb(252, 217, 223);
+  }
 }
 
-@media screen and (max-width: 480px) {
-    .contact-text-container {
-        max-width: 80vw;
-        margin-left: 10vw;
-        padding-top: 10vh;
-    }
+@media screen and (max-width: 500px) {
+  .contact-text {
+      font-size: 1.2em;
+  }
+}
 
-    .contact-text {
-        font-size: 3em;
-    }
+@media screen and (max-width: 900px) {
+  .contact-text {
+      font-size: 2.5em;
+  }
 
-    .contact-info-container {
-        padding-top: 8vh;
-    }
-    
-    .contact-info-text {
-        padding-left: 17px;
-        width: 95vw;
-        font-size: 1.1em;
-        padding-top: 20px;
-        padding-bottom: 40px;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-    }
+  .contact-info-text {
+    font-size: 1.2em;
+  }
 
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-    }
+  .contact-info-container {
+    padding-top: 10px;
+  }
+
+  .contact-text-container {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+  .contact-text-container {
+    width: 80vw;
+  }
 }
